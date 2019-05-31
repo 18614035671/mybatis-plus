@@ -1,10 +1,10 @@
 package com.disp.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.disp.entity.UserEntity;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * 用户表
@@ -24,5 +24,7 @@ public interface UserService extends IService<UserEntity> {
     void delAllUser(String[] ids);
 
     void deleteUser(Long id);
+
+    IPage<UserEntity> getUserPage(Integer currentPage, Integer pageSize);
 }
 
