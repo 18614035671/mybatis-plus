@@ -12,7 +12,7 @@
     <artifactId>dispute</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>dispute</name>
-    <description>单模块diaputess官网项目</description>
+    <description>单模块项目</description>
 
     <properties>
         <java.version>1.8</java.version>

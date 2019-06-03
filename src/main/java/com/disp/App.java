@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 @SpringBootApplication
-//@ComponentScan(basePackages = "com.disp.*")
 @MapperScan("com.disp.dao")
 public class App {
 

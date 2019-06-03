@@ -22,6 +22,7 @@ import java.util.List;
 public class UserServiceImpl extends ServiceImpl<UserDao, UserEntity> implements UserService {
     @Autowired
     private UserDao userDao;
+
     @Override
     public List<UserEntity> getUser() {
         return this.list(new QueryWrapper<UserEntity>());

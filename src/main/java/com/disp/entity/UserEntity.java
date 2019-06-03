@@ -11,7 +11,7 @@ import java.util.Date;
  * 用户表
  * 
  * @author xuzl
- * @email xzl18614035671@gmail.com
+ * @email 18614035671@163.com
  * @date 2019-05-30 15:15:45
  */
 @Data

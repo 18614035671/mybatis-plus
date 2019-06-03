@@ -48,7 +48,7 @@ public class MybatisPlusConfig {
         MybatisSqlSessionFactoryBean sqlSessionFactoryBean= new MybatisSqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
         // MyBatis Mapper 所对应的 XML 文件位置，如果您在 Mapper 中有自定义方法(XML 中有自定义实现)，需要进行该配置，告诉 Mapper 所对应的 XML 文件位置
-        sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:/mapper/**/*Dao.xml"));
+        sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:/mapper/*Dao.xml"));
         // MyBaits 别名包扫描路径，通过该属性可以给包中的类注册别名，注册后在 Mapper 对应的 XML 文件中可以直接使用类名，而不用使用全限定的类名(即 XML 中调用的时候不用包含包名)
         sqlSessionFactoryBean.setTypeAliasesPackage("com.disp.*.entity");
         sqlSessionFactoryBean.setTypeEnumsPackage("com.disp.common.enums");
