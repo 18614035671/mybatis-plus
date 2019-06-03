@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * MybatisPlus全局配置 3.1.1的yml不生效
+ * MybatisPlus全局配置
  */
 @Configuration
 public class MybatisPlusConfig {
